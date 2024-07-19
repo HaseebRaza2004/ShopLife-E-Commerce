@@ -43,6 +43,4 @@ signin_form.addEventListener('submit', function (e) {
 
     console.log("user info =>", userInfo);
 
-    console.log(auth);
-
 });
