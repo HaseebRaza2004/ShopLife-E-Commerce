@@ -4,11 +4,15 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.4/firebas
 import { getAuth,
     onAuthStateChanged,
     createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+    signOut ,
+
   } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js";
 
 import { getFirestore,
     doc, 
     setDoc,
+    getDoc ,
   } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
 
 import { getStorage,
@@ -41,8 +45,11 @@ export {
     storage,
     onAuthStateChanged,
     createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+    signOut ,
     doc, 
     setDoc,
+    getDoc ,
     ref, 
     uploadBytes,
     getDownloadURL, 
