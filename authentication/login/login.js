@@ -18,7 +18,9 @@ login_form.addEventListener('submit', (e) => {
         window.location.href = "/";
     })
         .catch((error) => {
-            alert("Please! Create your accocunt first");
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            alert(errorMessage);
         });
 
 });

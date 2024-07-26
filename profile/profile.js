@@ -11,6 +11,7 @@ import {
 
 const user_image = document.getElementById("user_image");
 const user_email = document.getElementById("user_email");
+const logout_btn = document.getElementById("logout_btn");
 
 
 onAuthStateChanged(auth, (user) => {
@@ -22,7 +23,7 @@ onAuthStateChanged(auth, (user) => {
         // console.log(uid);
         // ...
     } else {
-
+        window.location.href = '../authentication/login/login.html';
     }
 });
 
@@ -40,7 +41,10 @@ function gettingUserInfo(uid) {
     }).catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        console.log(errorMessage);
+        alert(errorMessage);
     });
 };
 
+logout_btn.addEventListener('click' , ()=>{
+    signOut(auth);
+});
