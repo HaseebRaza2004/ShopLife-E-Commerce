@@ -1,4 +1,5 @@
 import {
+    auth,
     ref,
     storage,
     uploadBytes,
@@ -20,6 +21,7 @@ additems_form.addEventListener('submit', (e) => {
         category: e.target[2].value,
         description: e.target[3].value,
         price: e.target[4].value,
+        createdBy: auth.currentUser.uid,
     };
 
     console.log("itemInfo =>", itemInfo);

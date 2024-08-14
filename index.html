@@ -7,27 +7,76 @@
     <title>ShopLife</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css"
+        integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
 
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <nav class="bg-green-100 border-gray-200 dark:bg-gray-900">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-            <a href="https://flowbite.com" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-            </a>
+            <div class="flex items-center space-x-3 rtl:space-x-reverse">
+                <svg class="h-9 w-9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+
+                    <defs>
+                    </defs>
+                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                        transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                        <path
+                            d="M 16.569 24.711 c -1.378 0 -2.62 -0.956 -2.927 -2.357 l -0.554 -2.522 c -0.724 -3.296 -3.698 -5.689 -7.072 -5.689 H 3 c -1.657 0 -3 -1.343 -3 -3 s 1.343 -3 3 -3 h 3.016 c 6.171 0 11.61 4.375 12.933 10.402 l 0.554 2.521 c 0.355 1.619 -0.668 3.218 -2.287 3.574 C 16.999 24.689 16.782 24.711 16.569 24.711 z"
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(43,170,118); fill-rule: nonzero; opacity: 1;"
+                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path
+                            d="M 64.526 73.691 c -0.005 -0.136 -0.021 -0.27 -0.021 -0.407 c 0 -2.07 0.633 -3.995 1.715 -5.593 H 42.755 c 1.082 1.597 1.714 3.523 1.714 5.593 c 0 0.137 -0.015 0.271 -0.021 0.407 H 64.526 z"
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(43,170,118); fill-rule: nonzero; opacity: 1;"
+                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path
+                            d="M 24.469 73.284 c 0 -2.081 0.64 -4.015 1.733 -5.617 c -1.408 -0.123 -2.519 -1.295 -2.519 -2.734 c 0 -1.521 1.237 -2.758 2.758 -2.758 c 1.657 0 3 -1.343 3 -3 s -1.343 -3 -3 -3 c -4.83 0 -8.758 3.929 -8.758 8.758 c 0 4.154 2.909 7.634 6.796 8.528 C 24.477 73.402 24.469 73.344 24.469 73.284 z"
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(43,170,118); fill-rule: nonzero; opacity: 1;"
+                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path
+                            d="M 76.675 62.176 H 24.794 c -1.409 0 -2.628 -0.98 -2.93 -2.356 l -8.222 -37.465 c -0.195 -0.887 0.023 -1.815 0.592 -2.523 c 0.57 -0.708 1.429 -1.12 2.338 -1.12 H 87 c 0.853 0 1.665 0.363 2.234 0.998 c 0.568 0.635 0.841 1.482 0.748 2.33 l -3.434 31.287 C 85.995 58.371 81.75 62.176 76.675 62.176 z M 27.207 56.176 h 49.468 c 2.01 0 3.69 -1.507 3.909 -3.505 l 3.068 -27.96 H 20.302 L 27.207 56.176 z"
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(43,170,118); fill-rule: nonzero; opacity: 1;"
+                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path
+                            d="M 53.842 62.176 c -1.657 0 -3 -1.343 -3 -3 V 21.711 c 0 -1.657 1.343 -3 3 -3 s 3 1.343 3 3 v 37.465 C 56.842 60.833 55.499 62.176 53.842 62.176 z"
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(43,170,118); fill-rule: nonzero; opacity: 1;"
+                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path
+                            d="M 68.233 62.176 c -0.082 0 -0.165 -0.003 -0.249 -0.01 c -1.651 -0.137 -2.88 -1.585 -2.744 -3.236 l 3.083 -37.465 c 0.136 -1.65 1.568 -2.882 3.236 -2.744 c 1.651 0.136 2.88 1.584 2.744 3.236 l -3.083 37.465 C 71.092 60.989 69.779 62.176 68.233 62.176 z"
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(43,170,118); fill-rule: nonzero; opacity: 1;"
+                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path
+                            d="M 39.448 62.176 c -1.51 0 -2.81 -1.137 -2.978 -2.673 l -4.111 -37.465 c -0.181 -1.647 1.008 -3.128 2.655 -3.309 c 1.647 -0.18 3.128 1.008 3.309 2.655 l 4.111 37.465 c 0.181 1.646 -1.008 3.129 -2.655 3.31 C 39.668 62.17 39.558 62.176 39.448 62.176 z"
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(43,170,118); fill-rule: nonzero; opacity: 1;"
+                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path
+                            d="M 84.944 43.443 H 20.683 c -1.657 0 -3 -1.343 -3 -3 s 1.343 -3 3 -3 h 64.262 c 1.657 0 3 1.343 3 3 S 86.602 43.443 84.944 43.443 z"
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(43,170,118); fill-rule: nonzero; opacity: 1;"
+                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <circle cx="34.47" cy="73.28" r="7"
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(36,137,96); fill-rule: nonzero; opacity: 1;"
+                            transform="  matrix(1 0 0 1 0 0) " />
+                        <circle cx="74.5" cy="73.28" r="7"
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(36,137,96); fill-rule: nonzero; opacity: 1;"
+                            transform="  matrix(1 0 0 1 0 0) " />
+                    </g>
+                </svg> <span
+                    class="text-green-600 self-center text-2xl font-semibold whitespace-nowrap dark:text-white">ShopLife</span>
+            </div>
             <div class="flex items-center space-x-6 rtl:space-x-reverse">
 
-                <span id="user_contact" class="text-sm  text-gray-500 dark:text-white hover:underline">0000</span>
+                <!-- <span id="user_contact" class="text-sm  text-gray-500 dark:text-white hover:underline">0000</span> -->
                 <a href="./profile/profile.html" class="relative" style="display: none;" id="avatar">
                     <img id="user_image" class="w-10 h-10 rounded-full" src="" alt="">
                     <span
                         class="bottom-0 left-7 absolute  w-3.5 h-3.5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
                 </a>
                 <a id="login_link" href="./authentication/login/login.html"
-                    class="text-sm  text-blue-600 dark:text-blue-500 hover:underline">Login</a>
+                    class="text-sm  text-green-600 dark:text-green-700 hover:underline">Login</a>
             </div>
         </div>
     </nav>
@@ -52,6 +101,25 @@
         </div>
     </nav> -->
 
+    <section class="text-gray-600 body-font">
+        <div class="container flex flex-wrap px-5 py-24 mx-auto items-center">
+          <div class="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-200">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Start Your Own Bussiness At Home</h1>
+            <p class="leading-relaxed text-base">Join our platform and add next level items to get customers attention and bost your sale ,Start your journey with us and earn money at home.</p>
+            <a class="text-indigo-500 inline-flex items-center mt-4">Join Now
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="flex flex-col md:w-1/2 md:pl-12">
+            <img class="w-[550px] h-[350px]" class="mx" src="https://plus.unsplash.com/premium_vector-1719990020640-4440ecfabd17?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJ1c2luZXNzJTIwbWFufGVufDB8fDB8fHww" alt="" srcset="">
+          </div>
+        </div>
+      </section>
+
+
+
 
     <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
@@ -61,9 +129,6 @@
     </section>
 
     <button id="logout_btn">log out</button>
-
-
-
 
     <script type="module" src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>

@@ -14,8 +14,11 @@ import { getFirestore,
     setDoc,
     getDoc ,
     collection, 
+    query, 
+    where, 
     addDoc,
     getDocs,
+    deleteDoc 
   } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
 
 import { getStorage,
@@ -55,7 +58,10 @@ export {
     getDoc ,
     getDocs,
     collection, 
+    query, 
+    where, 
     addDoc,
+    deleteDoc ,
     ref, 
     uploadBytes,
     getDownloadURL, 
