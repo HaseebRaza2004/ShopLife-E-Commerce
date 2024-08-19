@@ -20,7 +20,6 @@ const logout_btn = document.getElementById('logout_btn');
 const login_link = document.getElementById('login_link');
 const user_image = document.getElementById('user_image');
 const avatar = document.getElementById('avatar');
-const user_contact = document.getElementById('user_contact');
 const container = document.getElementById("container");
 
 getAllItems();
@@ -55,8 +54,6 @@ function getUserInfo(uid) {
         console.log(data.data());
 
         user_image.src = data.data().image;
-        user_contact.innerText = data.data().number;
-
     }).catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;

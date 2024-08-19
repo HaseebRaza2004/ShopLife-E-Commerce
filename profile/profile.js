@@ -67,7 +67,7 @@ async function getAllDealerItems(uid) {
 
             const item = doc.data();
 
-            const { img, description, title, category, price } = item;
+            const { img, description, title, category, price, createdBy } = item;
 
             const card = ` <div class="p-4 md:w-1/3">
                     <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
@@ -84,7 +84,7 @@ async function getAllDealerItems(uid) {
                                         <path d="M5 12h14"></path>
                                         <path d="M12 5l7 7-7 7"></path>
                                     </svg>
-                                </button id="${doc.id}">
+                                </button id=${doc.id}>
                                 <span
                                     class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
                                     PKR
@@ -95,13 +95,14 @@ async function getAllDealerItems(uid) {
                             </div>
                         </div>
                     </div>
-                </div>`
+                </div> `
 
                 window.deleteitem = deleteitem;
 
                 dealerItemContainer.innerHTML += card;
 
             console.log("data=>", item);
+            console.log("doc.id=>", doc.id);
         });
     } catch (error) {
         alert(error);
